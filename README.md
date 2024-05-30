@@ -15,8 +15,8 @@
 
 ## Generate a repo banner
 ASCII art 
-- WSL Command Line
-- figlet "Repo Collaboration Toolkit"  ("banner texts")
+- WSL Terminal
+- figlet "Repo Collaboration Toolkit"
 - showfigfonts | more
 
 
