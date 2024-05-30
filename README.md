@@ -43,8 +43,10 @@ Monitoring setup and configuration.
 - **Logs**: Setting up and accessing logs.
 - **Metrics**: Configuring and viewing metrics.
 - **Tracing**: Setting up tracing.
-- **Runbooks**: Links to operational runbooks.
-
+- **Alerts**: Where are the alerts directed to?
+- **Runbooks**: Links to operational runbooks to resolve known erros.
+- **Post Mortem Analysis Guide**: Links to operational runbooks to resolve known erros.
+  
 ## DevOps
 How the project is performing according to DORA metrics.
 - **Deployment Frequency**: How often the project is deployed.
