@@ -9,16 +9,14 @@ A brief description of the project, what it does, and its key features.
 - [Local Development](#local-development)
 - [Testing](#testing)
 - [Monitoring](#monitoring)
-- [DevOps](#devops)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
-- [Feature Requests](#feature-requests)
-- [Bug Report](#bug-report)
-- [SLOs (Service Level Objectives)](#slos-service-level-objectives)
-- [Credits](#credits)
-- [FAQs](#faqs)
+- [Deployment](#deployment)
+- [DevOps](#devops)
+- [Dependency Map](#dependency-map)
 - [Documentation](#documentation)
-- [Related Projects](#related-projects)
+- [SLOs (Service Level Objectives)](#slos-service-level-objectives)
+- [Feature Requests](#feature-requests)
+- [Bug report](#bug-report)
 
 ## Usage
 Examples of how to use the project.
@@ -46,18 +44,6 @@ Monitoring setup and configuration.
 - **Alerts**: Where are the alerts directed to?
 - **Runbooks**: Links to operational runbooks to resolve known erros.
 - **Post Mortem Analysis Guide**: Links to operational runbooks to resolve known erros.
-  
-## DevOps
-How the project is performing according to DORA metrics.
-- **Deployment Frequency**: How often the project is deployed.
-- **Mean Lead Time for Changes**: The average time from code commit to deployment.
-- **Change Failure Rate**: The percentage of deployments causing failures in production.
-- **Mean Time to Recovery**: The average time to recover from a failure.
-
-## Deployment
-Instructions on how to deploy the project to a production environment.
-- Deployment scripts or commands
-- Configuration for different environments (e.g., staging, production).
 
 ## Contributing
 Guidelines for contributing to the project.
@@ -66,6 +52,31 @@ Guidelines for contributing to the project.
 - Require 1 or 2 approvals before merge (one who knows the code, one learner).
 - Coding standards and best practices.
 
+## Deployment
+Instructions on how to deploy the project to a production environment.
+- Deployment scripts or commands
+- Configuration for different environments (e.g., staging, production).
+
+## DevOps
+How the project is performing according to DORA metrics.
+- **Deployment Frequency**: How often the project is deployed.
+- **Mean Lead Time for Changes**: The average time from code commit to deployment.
+- **Change Failure Rate**: The percentage of deployments causing failures in production.
+- **Mean Time to Recovery**: The average time to recover from a failure.
+
+## Dependency Map
+Acknowledgements and credits for third-party libraries, tools, or collaborators.
+- Architecture diagram
+- C4 diagram with mermaid
+
+## Documentation
+Links to additional documentation.
+- [End User Documentation](link-to-end-user-documentation)
+- [Operational Runbooks](link-to-operational-runbooks)
+
+## SLOs (Service Level Objectives)
+- The time for a change from user request to task creation, prioritization, and implementation.
+
 ## Feature Requests
 Instructions on how to request new features or enhancements.
 - Submit feature requests via [GitHub issues](link-to-github-issues).
@@ -73,14 +84,3 @@ Instructions on how to request new features or enhancements.
 ## Bug report
 - Submit bugs requests via [GitHub issues](link-to-github-issues).
 - For quick fixes, clone the repository, implement the changes, and create a pull request.
-
-## SLOs (Service Level Objectives)
-- The time for a change from user request to task creation, prioritization, and implementation.
-
-## Credits
-Acknowledgements and credits for third-party libraries, tools, or collaborators.
-
-## Documentation
-Links to additional documentation.
-- [End User Documentation](link-to-end-user-documentation)
-- [Operational Runbooks](link-to-operational-runbooks)
