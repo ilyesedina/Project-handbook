@@ -1,4 +1,3 @@
-# Repo Collaboration Toolkit
  ```
  ____                     ____      _ _       _
 |  _ \ ___ _ __   ___    / ___|___ | | | __ _| |__
@@ -10,8 +9,8 @@
 |_   _|__   ___ | |     | | _(_) |_
   | |/ _ \ / _ \| |_____| |/ / | __|
   | | (_) | (_) | |_____|   <| | |_
-  |_|\___/ \___/|_|     |_|\_\_|\__|
-    A Comprehensive README Guide
+  |_|\___/ \___/|_|     |_|\_\_|\__| A Comprehensive README Guide
+             
  ```
 
 ## Generate a repo banner
