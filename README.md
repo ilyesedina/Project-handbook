@@ -80,7 +80,7 @@ Instructions on how to deploy the project to a production environment.
 ## DevOps
 How the project is performing according to DORA metrics.
 - **Deployment Frequency**: How often the project is deployed.
-- **Mean Lead Time for Changes**: The average time from code commit to deployment.
+- **Lead Time for Changes**: The average time from code commit to deployment.
 - **Change Failure Rate**: The percentage of deployments causing failures in production.
 - **Mean Time to Recovery**: The average time to recover from a failure.
 
