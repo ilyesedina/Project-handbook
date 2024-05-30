@@ -20,7 +20,7 @@ ASCII art
 - showfigfonts | more
 
 
-## Description
+## Repo Description
 A brief description of the project, what it does, and its key features.
 
 ## Table of Contents
