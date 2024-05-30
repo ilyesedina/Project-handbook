@@ -42,8 +42,8 @@ Monitoring setup and configuration.
 - **Metrics**: Configuring and viewing metrics.
 - **Tracing**: Setting up tracing.
 - **Alerts**: Where are the alerts directed to?
-- **Runbooks**: Links to operational runbooks to resolve known erros.
-- **Post Mortem Analysis Guide**: Links to operational runbooks to resolve known erros.
+- **Runbooks**: Links to operational runbooks to resolve known errors.
+- **Post Mortem Analysis Guide**: Links to operational runbooks to resolve known errors.
 
 ## Contributing
 Guidelines for contributing to the project.
@@ -73,6 +73,7 @@ Acknowledgements and credits for third-party libraries, tools, or collaborators.
 Links to additional documentation.
 - [End User Documentation](link-to-end-user-documentation)
 - [Operational Runbooks](link-to-operational-runbooks)
+- [Architecture Decision Records (ADRs)](link-to-adrs)
 
 ## SLOs (Service Level Objectives)
 - The time for a change from user request to task creation, prioritization, and implementation.
