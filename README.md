@@ -20,8 +20,8 @@ ASCII art
 - showfigfonts | more
 
 ## Markdown UI Editor
-(Readme.so)[https://readme.so/]
-Take a look on the (demo)[https://www.youtube.com/watch?v=OeBoVOtIAOk].
+[Readme.so](https://readme.so/)
+Take a look on the [demo](https://www.youtube.com/watch?v=OeBoVOtIAOk).
 
 ## Repo Description
 A brief description of the project, what it does, and its key features.
