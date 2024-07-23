@@ -6,7 +6,7 @@
 - **Encourage best practices**
 - **Improve code quality**
 
-![image-20240723-054147.png](image-20240723-054147.png)
+![SDLC](assets/SDLC.png)
 
 # How to Author a Pull Request
 
