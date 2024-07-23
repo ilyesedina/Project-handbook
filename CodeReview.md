@@ -10,7 +10,7 @@
 
 # How to Author a Pull Request
 
-1. **Link the PR with the corresponding Jira ticket** by naming the branch after the DPQUAL-XXXX code of the story. The easiest way to do this is to click the “Create a branch“ button inside the story.
+1. **Link the PR with the corresponding Jira ticket** by naming the branch after the JiraKey-XXXX code of the story. The easiest way to do this is to click the “Create a branch“ button inside the story.
 2. **Create small PRs** - split the Jira story into subtasks if it makes sense.
 3. **Avoid empty PR messages**. Include:
    - **Why**: Explains the motivation and context behind the PR, providing the rationale for the changes.
