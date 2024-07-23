@@ -26,7 +26,7 @@
 
 # How to Review a Pull Request
 
-1. **Follow the 5 steps of clarifications hierarchy**:
+1. **Follow the [5 steps](https://blog.shimin.io/are-code-reviews-crippling-your-delivery-process-how-categorizing-your-code-review-comments-can-speed-things-up) of clarifications hierarchy**:
    - **Clarifications**: This is often a sanity check for the reviewer (i.e. “I don’t have a full context of the problem, so I’m not sure if I understand this correctly”) that might catch a gap in the implementation.
    - **Nitpicks**: Non-blocking suggestions on stylistic improvements or spelling. Try to explicitly mark these comments as “NIT:”.
    - **Suggestions**: An alternative implementation of functionality that can spark tradeoff discussions.
