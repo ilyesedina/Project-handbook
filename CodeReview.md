@@ -44,7 +44,3 @@
    - **Readability**: Making sure the code is easy to understand and maintain.
    - **Consistency**: Ensuring adherence to coding standards and practices, naming standards.
    - **Test Coverage**: Verifying that the code is adequately tested.
-
-# Discussions in Progress
-
-- What categories of comments (i.e. nitpicks, suggestions, etc.) do we want to have in our team?
