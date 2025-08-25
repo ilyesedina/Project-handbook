@@ -95,3 +95,33 @@ git cherry-pick commit-idf22089f250118087a9c019d815cfce
 grep -r gitlab
 
 git clean -f -d
+
+git remote add -f iam-azuread-role ../iam-azuread-role
+
+git fetch ../iam_policy_s3_access (optional)
+
+git remote remove origin
+
+git remote -v
+
+git merge aws-tf-modules-iam/master --no-commit --allow-unrelated-histories
+
+git fetch ../iam_policy_s3_access
+
+git merge iam-azuread-role/github_migration --no-commit --allow-unrelated-histories
+
+git remote add iam-azuread-role ../iam-azuread-role
+
+Automatic merge went well; stopped before committing as requested
+
+ls
+
+git add -A
+
+git commit -m "merging repos"
+
+git log
+
+git remote -v
+
+git push remote-name
