@@ -1,6 +1,6 @@
 # Linux & Git Command Reference
 
-A quick reference guide for commonly used Linux and Git commands.  
+A quick reference guide for commonly used Linux and Git commands learned by a migration project. 
 
 ---
 
@@ -11,7 +11,7 @@ A quick reference guide for commonly used Linux and Git commands.
   ls -lha
   ```
 - **Move or rename files/directories**
- ```bash
-  mv old-repo-name new-repo-name
-  ```
-
+   ```bash
+    mv old-repo-name new-repo-name
+    ```
+ ## 🌱 Git Commands
