@@ -66,11 +66,7 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
 
 Create new repo
 
-add contributors to repos:
-
-DCI
-
-Data Platform
+Add contributors to repos (groups)
 
 Clone the GitLab repo
 
