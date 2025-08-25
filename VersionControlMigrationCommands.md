@@ -61,3 +61,41 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     git commit -m "Reorganized repo structure"
     git push
    ```
+--------------------
+## Unstructured Notes
+
+Create new repo
+
+add contributors to repos:
+
+DCI
+
+Data Platform
+
+Clone the GitLab repo
+
+Latest tag → the tag points to a branch
+
+git checkout (tab) look up the lates tag
+
+git fetch --all
+
+git branch -r
+
+git branch -vv
+
+git branch github_migration
+
+rm -r -f aws-tf-modules-storage (for delectated unwanted files)
+
+git tag v1.0
+
+git tag v1.0 -f
+
+git push origin tag v1.0 -f
+
+git cherry-pick commit-idf22089f250118087a9c019d815cfce
+
+grep -r gitlab
+
+git clean -f -d
