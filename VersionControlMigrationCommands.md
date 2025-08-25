@@ -10,10 +10,16 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
   ```bash
   ls -lha
   ```
+- **New Directory**
+   ```bash
+    mkdir new-folder
+    ```
 - **Move or rename files/directories**
    ```bash
     mv old-repo-name new-repo-name
     ```
+
+   
  ## 🌱 Git Commands
 - **Switch to the latest tag (use Tab to autocomplete)**
     ```bash
@@ -48,3 +54,10 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```bash
     git push github
     ```
+ ## Migrate files into a new subdirectory structure
+   ```bash
+    mkdir new-folder
+    git mv *.tf new-folder/
+    git commit -m "Reorganized repo structure"
+    git push
+   ```
