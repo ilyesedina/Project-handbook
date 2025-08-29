@@ -20,11 +20,32 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```
 
    
- ## 🌱 Git Commands
+ ## 🌱 Git Tags
+- **List tags**
+    ```bash
+    git tag -l "v1.8.5*"
+    ```
+- **Show to which commit the tag attached**
+    ```bash
+    $ git show v1.4
+    commit ca82a6dff817ec66f44342007202690a93763949
+    Author: Edina Ilyes <ilyesedina10@gmail.com>
+    Date:   Mon Mar 17 21:52:11 2025 -0700
+    ```
+- **Create a tag**
+    ```bash
+    $ git tag v1.4-lw
+    $ git tag
+    v0.1
+    v1.4-lw
+    v1.5
+    ```
 - **Switch to the latest tag (use Tab to autocomplete)**
     ```bash
     git switch <latest-tag>
     ```
+
+ ## 🌱 Git Commands
 - **Create a new directory and move files**
     ```bash
     mkdir kms-encryption-key
