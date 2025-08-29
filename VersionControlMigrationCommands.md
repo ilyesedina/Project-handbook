@@ -114,9 +114,7 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     rm -rf aws-tf-modules-storage
     ```
 
-----------------------------
 ## ✅ Staging & Committing
-
 - **Stage changes and commit**
     ```bash
     git add -A
@@ -134,6 +132,7 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     git commit -m "Reorganized repo structure"
     git push
    ```
+
  ## 🌉 Merging & Cherry-Picking
  - **Merge repos (allow unrelated histories)**
    ```bash
