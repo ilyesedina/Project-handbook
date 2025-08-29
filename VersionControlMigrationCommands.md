@@ -20,7 +20,7 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```
 
    
- ## 🌱 Git Tags
+ ## 🔖 Git Tags
 - **List tags**
     ```bash
     git tag -l "v1.8.5*"
