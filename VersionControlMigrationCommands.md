@@ -64,7 +64,17 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```bash
     git branch github_migration
     ```
-    
+
+## 🔄 Fetch & Sync
+- **Fetch all branches and tags**
+    ```bash
+    git fetch --all
+    ```
+- **Fetch from local repo**
+    ```bash
+    git fetch ../iam_policy_s3_access
+    ```
+
 ## 🌐 Git Remotes
 - **Add a new remote (GitHub)**
     ```bash
@@ -79,13 +89,18 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```bash
     git remote -v
     ```
+- **Push to specific remote**
+    ```bash
+    git push github
+    git push <remote-name>
+    ```
 - **Remove a remote (e.g., origin)**
     ```bash
     git remote remove origin
     ```
-----------------------------
- ## 🌱 Git Commands
-- **Create a new directory and move files**
+
+ ## 📂 File & Directory Management
+- **Create a new directory and move files into a new subdirectory**
     ```bash
     mkdir kms-encryption-key
     git mv *.tf kms-encryption-key
@@ -94,94 +109,48 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```bash
     git mv .terraform-version name-of-subfolder
     ```
+- **Remove unwanted directory**
+    ```bash
+    rm -rf aws-tf-modules-storage
+    ```
+
+----------------------------
+## ✅ Staging & Committing
+
 - **Stage changes and commit**
     ```bash
+    git add -A
     git commit -m "moved files to subdirectory"
-    ```
-- **Add a new remote (GitHub)**
-    ```bash
-    git remote add github git@github.com:LEGO/aws-tf-modules-storage.git
-    ```
-- **List remotes**
-    ```bash
-    git remote -v
-    ```
-- **Remove a remote (e.g., origin)**
-    ```bash
-    git remote remove origin
     ```
 - **Push to GitHub remote**
     ```bash
     git push github
     ```
- ## Migrate files into a new subdirectory structure
+    
+## 🛠️ Migration Workflow Example
    ```bash
     mkdir new-folder
     git mv *.tf new-folder/
     git commit -m "Reorganized repo structure"
     git push
    ```
---------------------
-## Unstructured Notes
-
-Create new repo
-
-Add contributors to repos (groups)
-
-Clone the GitLab repo
-
-Latest tag → the tag points to a branch
-
-git checkout (tab) look up the lates tag
-
-git fetch --all
-
-git branch -r
-
-git branch -vv
-
-git branch github_migration
-
-rm -r -f aws-tf-modules-storage (for delectated unwanted files)
-
-git tag v1.0
-
-git tag v1.0 -f
-
-git push origin tag v1.0 -f
-
-git cherry-pick commit-idf22089f250118087a9c019d815cfce
-
-grep -r gitlab
-
-git clean -f -d
-
-git remote add -f iam-azuread-role ../iam-azuread-role
-
-git fetch ../iam_policy_s3_access (optional)
-
-git remote remove origin
-
-git remote -v
-
-git merge aws-tf-modules-iam/master --no-commit --allow-unrelated-histories
-
-git fetch ../iam_policy_s3_access
-
-git merge iam-azuread-role/github_migration --no-commit --allow-unrelated-histories
-
-git remote add iam-azuread-role ../iam-azuread-role
-
-Automatic merge went well; stopped before committing as requested
-
-ls
-
-git add -A
-
-git commit -m "merging repos"
-
-git log
-
-git remote -v
-
-git push remote-name
+ ## 🌉 Merging & Cherry-Picking
+ - **Merge repos (allow unrelated histories)**
+   ```bash
+    git merge aws-tf-modules-iam/master --no-commit --allow-unrelated-histories
+    git merge iam-azuread-role/github_migration --no-commit --allow-unrelated-histories
+   ```
+ - **Cherry-pick a commit**
+   ```bash
+   git cherry-pick <commit-id>
+   ```
+   
+## 📜 Logs & Inspection
+ - **View commit history**
+   ```bash
+    git log
+   ```
+ - **Search repo for references**
+   ```bash
+    grep -r gitlab
+   ```
