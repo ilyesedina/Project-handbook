@@ -44,7 +44,46 @@ A quick reference guide for commonly used Linux and Git commands learned by a mi
     ```bash
     git switch <latest-tag>
     ```
-
+    
+## 🌱 Repo Setup
+- **Create new repo**
+- **Clone the GitLab repo**
+    ```bash
+    git clone <repo-url>
+    ```
+## 🌿 Git Branching
+- **List remote branches**
+    ```bash
+    git branch -r
+    ```
+- **Verbose branch info**
+    ```bash
+    git branch -vv
+    ```
+- **Create migration branch**
+    ```bash
+    git branch github_migration
+    ```
+    
+## 🌐 Git Remotes
+- **Add a new remote (GitHub)**
+    ```bash
+    git remote add <remote name> <remote path on github>
+    git remote add github git@github.com:LEGO/aws-tf-modules-storage.git
+    ```
+- **Add a local repo as remote**
+    ```bash
+    git remote add -f iam-azuread-role ../iam-azuread-role
+    ```
+- **List remotes**
+    ```bash
+    git remote -v
+    ```
+- **Remove a remote (e.g., origin)**
+    ```bash
+    git remote remove origin
+    ```
+----------------------------
  ## 🌱 Git Commands
 - **Create a new directory and move files**
     ```bash
