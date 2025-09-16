@@ -1,4 +1,4 @@
-## Related Roles and Transferable Skills in SRE
+## Related Roles and Transferable Skills in SRE SRE
 
 The SRE book describes other closely related roles that are similar to the role of an SRE, and highlights the importance of having transferable skills or switching between roles (hats) to achieve the best outcome for the project.
 
