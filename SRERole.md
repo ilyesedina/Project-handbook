@@ -71,6 +71,7 @@ The SRE book describes other closely related roles that are similar to the role 
   - Change management
   - Philosophy: Engineering approach to ops → reliability is a feature, managed with data and code
 
+![SRE-Pyramid](assets/SRE.png)
 ---
 
 ### Overhead
