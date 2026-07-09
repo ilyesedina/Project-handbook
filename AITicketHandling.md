@@ -8,6 +8,7 @@ A guide on how to use AI tools to improve the speed and quality of ticket manage
 
 - [First Time Setup](#first-time-setup)
 - [MCP Server Installation](#mcp-server-installation)
+- [Responding to Tickets with AI](#responding-to-tickets-with-ai)
 - [Writing Tickets with AI](#writing-tickets-with-ai)
 - [Breaking Down Tickets](#breaking-down-tickets)
 - [Estimating Effort](#estimating-effort)
@@ -140,6 +141,109 @@ Use this if the GUI doesn't cover your specific server or you need custom config
 
 ---
 
+## Responding to Tickets with AI
+
+Use AI to create high-quality responses that are grounded in existing documentation and known issue history.
+
+### Suggested Workflow
+
+1. Ask AI to open the ticket directly from Jira (via integration) before you paste extra context.
+2. Collect context before prompting AI:
+  - ticket title and full description
+  - affected environment/service
+  - error messages, logs, screenshots
+3. Ask AI to review relevant docs first (service documentation, runbooks, architecture notes, FAQs, previous post-mortems).
+4. Ask AI to check for existing known problems or duplicate tickets.
+5. Ask AI to draft a response with:
+  - what was found
+  - immediate workaround (if any)
+  - next action and owner
+  - expected update time
+6. Validate facts before posting (especially links, ticket IDs, and timelines).
+
+### Prompt Template (Documentation + Existing Problems)
+
+```text
+You are helping me respond to a support ticket.
+
+Task:
+1) Read and summarize the documentation that is most relevant to this ticket.
+2) Identify whether this appears to be an already known problem or duplicate issue.
+3) Provide a user-facing response I can paste into the ticket.
+4) Suggest documentation improvements based on your findings.
+
+Ticket details:
+- Title: [paste title]
+- Description: [paste description]
+- Service/Environment: [paste]
+- Error messages/logs: [paste]
+
+Documentation to review first:
+- [paste links or doc names]
+
+Known issue sources to check:
+- [Jira project/filter]
+- [incident list / post-mortems]
+- [GitHub issues / internal tracker]
+
+Output format:
+- Related docs reviewed
+- Possible existing/duplicate issues (with IDs)
+- Confidence level (high/medium/low)
+- Suggested response to user (clear and non-technical)
+- Internal next steps
+```
+
+### Prompt Template (Jira Integration + ServiceNow Data)
+
+```text
+Use Jira integration to open ticket [TICKET-ID] directly.
+
+Investigation steps:
+1) Read the full ticket history (description, comments, linked issues, labels, components).
+2) Review related Jira incidents/problems/changes and identify likely duplicates.
+3) If ServiceNow data is available through integrations, review related incident/problem/change records.
+4) Correlate findings with known errors, runbooks, and post-mortems.
+
+Then provide:
+- Summary of findings
+- Existing known problem references (Jira IDs and ServiceNow IDs, if available)
+- Most likely cause category (configuration, dependency, code regression, capacity, external)
+- Immediate workaround (if any)
+- Draft reply to the user
+- Internal follow-up actions with owner suggestions
+
+Constraints:
+- Do not invent ticket IDs or root causes.
+- Mark uncertain statements as assumptions.
+- Keep the user-facing reply clear and concise.
+```
+
+### Example User-Facing Reply
+
+```text
+Thanks for reporting this. We reviewed the relevant documentation and checked existing incidents.
+
+What we found:
+- This appears related to [INC-123 / ABC-456], which shows similar symptoms.
+- Current impact is [scope].
+
+Next steps:
+- We are [action being taken].
+- We will post the next update by [time/date].
+
+If possible, please share [specific detail] to help us confirm faster.
+```
+
+### Quality Checklist Before Posting
+
+- Confirm duplicate/known issue IDs are correct.
+- Ensure the message avoids guessing root cause if not confirmed.
+- Include a clear next update time.
+- Keep tone clear, calm, and user-focused.
+
+---
+
 ## Writing Tickets with AI
 
 AI can help turn rough ideas into well-structured Jira stories or GitHub issues. Give it the context of what you want to build and let it produce a first draft.
@@ -240,4 +344,9 @@ AI can help write complete, reproducible bug reports from a brief description of
 | Generate a bug report | *"Format this into a bug report: users can't log in after password reset on mobile Safari."* |
 | Draft acceptance criteria | *"Generate Given/When/Then acceptance criteria for: a user can filter search results by date range."* |
 | Prioritise a backlog | *"Given these 10 ticket titles and descriptions, suggest a priority order based on user impact and effort."* |
+| Respond to a user ticket | *"Use Jira integration to open ticket [TICKET-ID], check related known issues, and draft a user-facing response with next update time."* |
+| Investigate with docs first | *"Read service documentation, runbooks, FAQs, and post-mortems related to this ticket, then summarize findings and confidence level."* |
+| Check duplicates and known problems | *"Find likely duplicates or known problems for this ticket across Jira incidents/problems and return matching IDs with evidence."* |
+| Use ServiceNow data (if connected) | *"Review related ServiceNow incident/problem/change records for this Jira ticket and suggest the most likely cause category."* |
+| Suggest doc improvements | *"Based on this ticket investigation, suggest specific documentation updates that would prevent or speed up future resolution."* |
 | Draft a problem | *"Write a clear problem statement so that, if we solve it, we should not receive this ticket again."* |
